@@ -17,22 +17,18 @@ const userLoggedIn = () => JSON.parse(localStorage.getItem('user'));
     <div className="App">
       <header className="App-header">
           TODOS FOR THIS LAB
-          {/* <LogIn /> */}
-          
+          {/* <LogIn /> */}          
          
       </header>
-          
-        <Router> 
+          <Router> 
             <Route exact path="/" render= {() =>
             userLoggedIn() 
             ? <TodoApp /> 
             : <Redirect to='/login' />
             } />
             <Route exact path="/login" component={LogIn}/>
-            
-        </Router>
+          </Router>
     </div>
-         
     );
   }
 

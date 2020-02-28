@@ -46,8 +46,7 @@ export default class LogIn extends Component {
                 <input value={ this.state.usernameSignIn} onChange={(e) => this.setState({ usernameSignIn: e.target.value})} />
                 <input value={ this.state.passwordSignIn} onChange={(e) => this.setState({ passwordSignIn: e.target.value})} />
 
-                <button onClick={this.handleSignIn}>Sign in</button>     
-   
+                <button onClick={this.handleSignIn}>Sign in</button>       
                 </div>
         )
     }
